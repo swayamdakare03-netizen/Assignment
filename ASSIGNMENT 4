@@ -1,0 +1,18 @@
+# Assignment 4
+
+# 1. Addition using Python List
+rows = int(input("Enter rows: "))
+cols = int(input("Enter cols: "))
+
+print("Enter Matrix A:")
+A = [[int(input(f"A[{i}][{j}]: ")) for j in range(cols)] for i in range(rows)]
+
+print("Enter Matrix B:")
+B = [[int(input(f"B[{i}][{j}]: ")) for j in range(cols)] for i in range(rows)]
+
+# Addition
+C = [[A[i][j] + B[i][j] for j in range(cols)] for i in range(rows)]
+
+print("\nResult using List:")
+for row in C:
+    print(row)
