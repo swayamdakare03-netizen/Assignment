@@ -1,0 +1,35 @@
+# Assignment NO. 1
+# Operations on Lists, Tuple and dictionary
+# List
+L = [10, 20, 30, 40]
+
+print("List:", L)
+
+L.append(50)
+print("After append:", L)
+
+L.remove(20)
+print("After remove:", L)
+
+
+# Tuple
+T = (10, 20, 30, 20)
+
+print("\nTuple:", T)
+print("Count of 20:", T.count(20))
+print("Index of 30:", T.index(30))
+
+
+# Dictionary
+D = {"Name": "Soham", "Age": 18}
+
+print("\nDictionary:", D)
+
+D["City"] = "Pune"
+print("After adding:", D)
+
+D["Age"] = 19
+print("After updating:", D)
+
+D.pop("Age")
+print("After removing:", D)
