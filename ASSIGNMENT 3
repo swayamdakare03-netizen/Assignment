@@ -1,0 +1,19 @@
+# Assignment 3
+# Check whether a triangle is right-angled using function
+def check_right_angled_triangle(a, b, c):
+    sides = sorted([a, b, c])
+    x, y, z = sides[0], sides[1], sides[2]
+    
+    # Check Pythagoras theorem with a small tolerance for floating-point accuracy
+    if abs((x**2 + y**2) - z**2) < 1e-9:
+        return True
+    return False 
+
+side1 = float(input("Enter side 1: "))
+side2 = float(input("Enter side 2: "))
+side3 = float(input("Enter side 3: "))
+
+if check_right_angled_triangle(side1, side2, side3):
+    print("Yes, it is a right-angled triangle.")
+else:
+    print("No, it is not a right-angled triangle.")
